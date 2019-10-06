@@ -24,7 +24,7 @@ const App = () => {
         <Protected path="/cursos" exact component={()=><Courses />} />
         <Protected path="/cursos/:id" component={()=><Course />} />
         <Protected path="/profesores" component={()=> <Teachers />} />
-        <Protected path="/clase/:id" component={Fragment} />
+        <Protected path="/clase/:id" component={()=> <Fragment />} />
 
         <Public path="/login" exact component={Login}/>
         <Public path="/registro" exact component={Register}/>
