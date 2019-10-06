@@ -62,7 +62,7 @@ export const getPost = id =>dispatch =>{
 }
 
 export const getSpeciality = id =>dispatch =>{
-  axios.get(`${API_URL}/especialidades/${id}`)
+  axios.get(`${API_URL}/especialidad/${id}`)
     .then(response =>{
       return dispatch({
         type: GET_SPECIALITY,
@@ -72,7 +72,7 @@ export const getSpeciality = id =>dispatch =>{
 }
 
 export const getCourse = id =>dispatch =>{
-  axios.get(`${API_URL}/cursos/${id}`)
+  axios.get(`${API_URL}/curso/${id}`)
     .then(response =>{
       return dispatch({
         type: GET_COURSE,

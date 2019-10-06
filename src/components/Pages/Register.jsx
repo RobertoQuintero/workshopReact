@@ -27,7 +27,7 @@ const Register = () => (
     <form onSubmit={registration.bind()}>
       <div className="form__item">
         <label htmlFor="fullname">
-          Nombre completp
+          Nombre completo
           <input type="text" name="fullname" id="fullname" placeholder="Escribe tu nombre" required/>
         </label>
       </div>
